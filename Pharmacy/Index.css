@@ -1,0 +1,132 @@
+.menu{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #777;
+    z-index: 1;
+}
+.menu-group{
+    padding-left: 10px;
+    margin: 0%;
+}
+.menu-group > li{
+    display: inline-block;
+    padding: 0.5em;
+}
+.menu-group > li:hover{
+    background-color: black;
+}
+.menu-group > li a{
+    color: white;
+    text-decoration: none;
+}
+.sub-menu-cont{
+    position: relative;
+}
+.sub-menu{
+    display: none;
+    top: 100%; 
+    left: 0%;  
+    position: absolute;
+    background-color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.sub-menu-cont:hover .sub-menu{
+    display: block;
+}
+.sub-menu > li a{
+    display: inline-block;
+    width: 100%;
+    padding: 00.5em;
+    color: black;
+}
+.sub-menu > li:hover a{
+    background-color: black;
+    color: white;
+}
+.slides{
+    border: 2px solid steelblue;
+    position: relative;
+    margin: 2px;
+    height: 405px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    background-color: #e1eafc;
+}
+.img{
+    position: absolute;
+    object-fit: cover; 
+    max-height: 100%;
+    max-width: 100%;
+    padding: 2px;
+}
+.pic1{
+    animation: img-mngr 10s infinite 0s; 
+}
+.pic2{
+    animation: img-mngr 10s infinite 2s;
+}
+.pic3{
+    animation: img-mngr 10s infinite 4s; 
+}
+.pic4{
+    animation: img-mngr 10s infinite 6s; 
+}
+.pic5{
+    animation: img-mngr 10s infinite 8s; 
+}
+@keyframes img-mngr{
+    0%{opacity: 1;}
+    10%{opacity: 1;}
+    25%{opacity: 0;}
+    85%{opacity: 0;}
+}
+.covidCare, .diabetCare {
+    margin: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.product{
+    position: relative;
+    background-color: #e3ecfc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    margin: 0.4em 1em;
+    width: 250px;
+    height: 325px;
+    padding-left: 10px;
+    display: inline-block;
+}
+.product img{
+    width: 225px;
+    height: 190px;
+    object-fit: fill;
+}
+.product h4{
+    margin: 0.33em 0;
+}
+.product p{
+    margin: 0.4em 0;
+}
+.product button{
+    font-weight: bold;
+    color: #d18304;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #7902cf;
+    width: 94%;
+    font-size: 1.2em;
+    padding: 0.5% 0;
+    margin: 3px 3px;
+}
+.product button:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+}
+.product button:active{
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+}

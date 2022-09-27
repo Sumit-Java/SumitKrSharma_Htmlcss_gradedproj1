@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book a Lab Test Sample Collection Slot</title>
+        <link rel="stylesheet" href="Lab.css">
+    </head>
+    <body>
+        <div class="master">
+            <div class="lab-view">
+                <div class="form-cont">
+                    <form action="Lab-Confirmation.html" id="lab-form">
+                        <div class="section">
+                            <h3>1. Your Contact Details</h3>
+                            <input type="text" placeholder="Full Name" class="elements">
+                            <input type="text" placeholder="Patient Id if exists" class="elements"><br>
+                            <input type="number" placeholder="Contact Number" class="elements">
+                            <input type="email" placeholder="Email Id
+                            " class="elements">
+                        </div>
+                        <div class="section">
+                            <br><h3>2. Address</h3>
+                            <input type="text" placeholder="House Number" class="elements">
+                            <input type="text" placeholder="Street" class="elements"><br>
+                            <input type="text" placeholder="Area" class="elements"><br>
+                            <h5 class="sub-heads">District</h5>
+                            <select name="district" id="district" class="drop-down">
+                                <option value="choose">Choose</option>
+                                <option value="bengaluru-rural">Bengaluru Rural</option>
+                                <option value="bengaluru-urban">Bengaluru Urban</option>
+                                <option value="ballari">Ballari</option>
+                                <option value="bagalkot">Bagalkot</option>
+                            </select>
+                        </div>
+                        <div class="section">
+                            <br><h3>3. Choose the Test Type</h3>
+                            <p class="instruction">(Check atleast one box without fail)
+                            </p>
+                            <input type="checkbox" id="tst1" name="CBC" value="CBC">
+                            <label for="tst1" class="labels">CBC</label><br>
+
+                            <input type="checkbox" id="tst2" name="Urine" value="Complete Urine">
+                            <label for="tst2" class="labels">Complete Urine</label><br>
+
+                            <input type="checkbox" id="tst3" name="Lipid Profile" value="Lipid Profile">
+                            <label for="tst3" class="labels">Lipid Profile</label><br>
+
+                            <input type="checkbox" id="tst4" name="tsh" value="tsh">
+                            <label for="tst4" class="labels">Thyroid Stimulating Hormone(TSH)</label><br>
+
+                            <input type="checkbox" id="tst5" name="Glucose" value="Glucose">
+                            <label for="tst5" class="labels">Glucose Test</label><br>
+                        </div>
+                        <div class="section">
+                            <br><h3>4. Do you want a hard copy of the report also?</h3>
+                            <input type="radio" id="yes" name="print" value="yes">
+                            <label for="yes" class="labels">Yes</label><br>
+                            <input type="radio" id="no" name="print" value="no">
+                            <label for="no" class="labels">No</label><br>
+                        </div>
+                        <div class="section">
+                            <br><h3>5. Select Your Comfortable Date and Time</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="date" class="labels dt-tm-lbl">Date</label>
+                                        </td>
+                                        <td>
+                                            <input type="date" id="date" name="date" class="date-time">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="time" class="labels dt-tm-lbl">Time</label>
+                                        </td>
+                                        <td>
+                                            <input type="time" id="time" name="time" class="date-time">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <br><br>
+                    </form>
+                </div>            
+                <div class="img-cont">
+                </div>
+            </div>
+            <div class="controls">
+                <button type="reset" form="lab-form" class="buttons">Reset</button>
+                <button type="submit" form="lab-form" class="buttons">Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
